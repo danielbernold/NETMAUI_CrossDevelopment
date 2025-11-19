@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:NETMAUI_App.ViewModels"
+             x:Class="NETMAUI_App.Views.DetailPage"
+             Title="DetailPage">
+    <ContentPage.BindingContext>
+        <vm:DetailViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Padding="20">
+        <Label Text="Detail Page" FontSize="24" />
+
+        <Label Text="{Binding Text}" 
+           FontSize="20"
+           TextColor="Blue"/>
+
+        <Button Text="Back"
+            Command="{Binding GoBackCommand}" />
+    </VerticalStackLayout>
+</ContentPage>

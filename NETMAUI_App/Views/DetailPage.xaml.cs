@@ -1,0 +1,9 @@
+namespace NETMAUI_App.Views;
+
+public partial class DetailPage : ContentPage
+{
+	public DetailPage()
+	{
+		InitializeComponent();
+	}
+}
