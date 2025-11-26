@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:NETMAUI_App.Converters"
+             x:Class="NETMAUI_App.Views.CardPage"
+             Title="CardPage">
+    <ContentPage.Resources>
+        <converters:BoolToHeartConverter x:Key="BoolToHeartConverter"/>
+    </ContentPage.Resources>
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+            <!-- Product Card -->
+            <Frame HasShadow="True" CornerRadius="12" Padding="15">
+                <VerticalStackLayout Spacing="10">
+                    <!-- Product Image -->
+                    <Image Source="dotnet_bot.png"
+                           HeightRequest="150"
+                           Aspect="AspectFill"/>
+                    <!-- Product Title -->
+                    <Label Text="Awesome Product"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+                    <!-- Price -->
+                    <Label Text="$29.99"
+                           FontSize="18"
+                           TextColor="DarkGreen"/>
+                    <!-- Button -->
+                    <Button Text="Add to Cart"
+                            BackgroundColor="#4A90E2"
+                            TextColor="White"
+                            CornerRadius="8"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Label Text="{Binding IsFavorite, Converter={StaticResource BoolToHeartConverter}}"
+                   FontSize="64"
+                   HorizontalTextAlignment="Center"/>
+
+            <Button Text="Toggle Favourite"
+                    Command="{Binding ToggleCommand}"
+                    BackgroundColor="#E91E63"
+                    TextColor="White"
+                    CornerRadius="12"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
