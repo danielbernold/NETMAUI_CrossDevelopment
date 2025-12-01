@@ -11,19 +11,24 @@
     <TabBar>
         <!-- Startseite -->
         <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate views:HomePage}" />
+            Title="Home"
+            ContentTemplate="{DataTemplate views:HomePage}" />
 
         <!-- Navigation-Ziel -->
         <ShellContent
-        Title="Detail"
-        Route="detail"
-        ContentTemplate="{DataTemplate views:DetailPage}" />
+            Title="Detail"
+            Route="detail"
+            ContentTemplate="{DataTemplate views:DetailPage}" />
 
         <ShellContent
-        Title="Search"
-        Route="search"
-        ContentTemplate="{DataTemplate views:Search}" />
+            Title="Search"
+            Route="search"
+            ContentTemplate="{DataTemplate views:Search}" />
+
+        <ShellContent
+            Title="Card"
+            Route="card"
+            ContentTemplate="{DataTemplate views:CardPage}" />
 
     </TabBar>
 

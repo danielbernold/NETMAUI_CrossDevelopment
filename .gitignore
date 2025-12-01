@@ -1,0 +1,53 @@
+# Build outputs
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Mac / VS for Mac
+.idea/
+*.userprefs
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+project.lock.json
+artifacts/
+packages/
+
+# Logs
+*.log
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Android
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# iOS / macOS
+*.app
+*.ipa
+*.dSYM/
+*.xcworkspace/
+*.xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+*.xcodeproj/project.xcworkspace/xcuserdata
+
+# Maui specific
+Platforms/Android/obj/
+Platforms/iOS/obj/
+Platforms/MacCatalyst/obj/
+Platforms/Windows/obj/

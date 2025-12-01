@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using NETMAUI_App.Converters;
 
 namespace NETMAUI_App
 {
@@ -18,6 +19,8 @@ namespace NETMAUI_App
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+
+            builder.Services.AddSingleton<BoolToHeartConverter>();
 
             return builder.Build();
         }
