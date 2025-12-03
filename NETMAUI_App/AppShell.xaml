@@ -30,6 +30,11 @@
             Route="card"
             ContentTemplate="{DataTemplate views:CardPage}" />
 
+        <ShellContent
+            Title="Posts"
+            Route="posts"
+            ContentTemplate="{DataTemplate views:PostPage}" />
+
     </TabBar>
 
 </Shell>
